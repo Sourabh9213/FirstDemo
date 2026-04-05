@@ -40,7 +40,7 @@ public class ParallelTests {
 
 	@AfterMethod
 	public void teardown() throws InterruptedException {
-		Thread.sleep(20000);
+		Thread.sleep(100000);
 		driver.quit();
 	}
 }
