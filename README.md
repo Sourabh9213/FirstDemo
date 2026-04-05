@@ -95,6 +95,6 @@ This project demonstrates how DevOps tools like Jenkins, Docker, and Git can be 
 
 ---
 
-## 👨‍💻 Author
-
-Sourabh
+## 👨‍💻 Author  
+Sourabh  
+(Documentation assisted with AI tools)

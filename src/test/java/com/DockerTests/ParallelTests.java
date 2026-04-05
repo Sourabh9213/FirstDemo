@@ -18,6 +18,7 @@ public class ParallelTests {
 	@Test
 	public void setup(String bname) throws MalformedURLException {
 	if (bname.equalsIgnoreCase("chrome")) {
+	// For Chrome Browser
 		ChromeOptions options = new ChromeOptions();
 		driver = new RemoteWebDriver(new URL("http://localhost:4444/wd/hub"), options);
 		driver.get("https://www.amazon.in");
@@ -25,13 +26,13 @@ public class ParallelTests {
 
 	} else if (bname.equalsIgnoreCase("firefox")) {
 		FirefoxOptions options = new FirefoxOptions();
-		driver = new RemoteWebDriver(new URL("http://localhost:4444"), options);
+		driver = new RemoteWebDriver(new URL("http://localhost:4444/wd/hub"), options);
 		driver.get("https://www.amazon.in");
 		System.out.println("Launching Firefox");
 
 	} else if (bname.equalsIgnoreCase("edge")) {
 		EdgeOptions options = new EdgeOptions();
-		driver = new RemoteWebDriver(new URL("http://localhost:4444"), options);
+		driver = new RemoteWebDriver(new URL("http://localhost:4444/wd/hub"), options);
 		driver.get("https://www.amazon.in");
 		System.out.println("Launching MicrosoftEdge");
 		}
